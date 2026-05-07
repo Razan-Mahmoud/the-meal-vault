@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./layout-components/header";
+import { Happy_Monkey } from "next/font/google";
+
+import "@/app/globals.css";
 import { Providers } from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const happyMonkey = Happy_Monkey({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "400",
+  style: "normal",
 });
 
 export const metadata: Metadata = {
-  title: "The Meal Vault App",
+  title: {
+    template: "%s | The Meal Vault App",
+    default: "The Meal Vault App",
+  },
   description: "Recipes from around the world",
 };
 
@@ -26,11 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={` ${geistSans.variable} ${geistMono.variable} bg-stone-100 antialiased`}>
+      <body
+        className={` ${happyMonkey.className} bg-neutral-200 antialiased dark:bg-slate-600 dark:text-neutral-200`}
+      >
         <Providers>
-          <Header />
-
-          {children}
+          <main>{children}</main>
         </Providers>
       </body>
     </html>

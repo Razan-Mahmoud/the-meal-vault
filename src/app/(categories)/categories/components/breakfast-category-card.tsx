@@ -1,0 +1,44 @@
+import breakfastPic from "@/public/breakfast.jpg";
+import Image from "next/image";
+import Link from "next/link";
+
+const categoryCards = [
+  {
+    idCategory: "13",
+    strCategory: "Breakfast",
+    src: breakfastPic,
+    alt: "a cup of coffee and dishes of fruit and egg",
+    title: "Breakfast",
+  },
+];
+
+export default function BreakfastCategoryCard() {
+  return (
+    <div className="flex flex-wrap justify-center gap-10">
+      {/* Category Card */}
+      {categoryCards.map((card) => {
+        return (
+          <Link
+            href={`/categories/${card.strCategory.toLowerCase()}`}
+            prefetch={false}
+            key={card.strCategory}
+            className="relative block aspect-video w-3/4 overflow-hidden rounded-md md:w-[30%]"
+          >
+            {/* Image */}
+            <Image
+              src={card.src}
+              alt={card.alt}
+              fill
+              className="object-cover object-center transition-transform duration-300 ease-in-out hover:scale-110"
+            />
+
+            {/* text and overlaying  layer */}
+            <div className="absolute bottom-0 z-20 flex h-1/2 w-full items-center justify-center rounded-md bg-linear-to-t from-[#0A0000]">
+              <p className="text-2xl font-semibold text-neutral-200">{card.title}</p>
+            </div>
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
