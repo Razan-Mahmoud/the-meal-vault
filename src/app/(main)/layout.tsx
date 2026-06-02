@@ -35,7 +35,7 @@ export default function RootLayout({
           </p>
         </div>
         {/* opacue layer */}
-        <div className="absolute inset-0 z-10 bg-gray-800 opacity-55"></div>
+        <div className="absolute inset-0 z-10 bg-gray-800 opacity-35"></div>
       </div>
 
       {children}
