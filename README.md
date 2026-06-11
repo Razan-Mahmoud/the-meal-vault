@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- App URL: [The Meal Vault](<a href="https://the-meal-vault.vercel.app/" target="_blank"></a>)(https://the-meal-vault.vercel.app/)
+- App URL: [The Meal Vault](https://the-meal-vault.vercel.app/)
 
 ### Built with
 
