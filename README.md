@@ -4,15 +4,12 @@ This is a full-stack recipe discovery web app that uses Next.js, TypeScript, Tai
 
 ## Table of contents
 
-- [Overview](#overview)
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
 - [Author](#author)
-
-## Overview
 
 ### The challenge
 
@@ -25,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![A screenshot of the app's home page, showing the title, background image and navbar that containes theme toggle.](/newsHomepage-screenshot.jpg)
+![A screenshot of the app's home page, showing the title, background image and navbar that containes theme toggle.](./meal-vault-main-page.png)
 
 ### Links
 
