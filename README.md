@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![A screenshot of the app's home page, showing the title, background image and navbar that containes theme toggle.](./meal-vault-main-page.png)
+![A screenshot of the app's home page, showing the title, background image and navbar that containes theme toggle.](./the-meal-vault-main-page.png)
 
 ### Links
 
