@@ -46,4 +46,4 @@ By building a complex full-stack application using Next.js, TypeScript and Tailw
 
 - Website - [Razan Mahmoud](https://github.com/Razan-Mahmoud)
 - APIs - [The Meal DB Free API](https://www.themealdb.com/api.php)
-- Open Source Images - [Pixabay](https://pixabay.com/) and also [Pexels](https://www.pexels.com/)
+- Open Source Images - [Pixabay](https://pixabay.com/) and [Pexels](https://www.pexels.com/)
