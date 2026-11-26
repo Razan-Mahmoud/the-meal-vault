@@ -34,7 +34,7 @@ export default function MealDetailsPage({ meal }: MealDetailsPageProps) {
 
       {/* Area and Category badges */}
       <div>
-        <MealBadge label={meal.strArea} href={`/areas/${meal.strArea}`} />
+        {meal.strArea && <MealBadge label={meal.strArea} href={`/areas/${meal.strArea}`} />}
 
         <MealBadge
           label={meal.strCategory}

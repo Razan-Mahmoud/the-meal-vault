@@ -29,7 +29,7 @@ export default function RootLayout({
         className={` ${happyMonkey.className} bg-neutral-200 antialiased dark:bg-slate-600 dark:text-neutral-200`}
       >
         <Providers>
-          <main>{children}</main>
+          <>{children}</>
         </Providers>
       </body>
     </html>
